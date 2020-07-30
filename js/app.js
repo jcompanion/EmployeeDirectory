@@ -66,7 +66,7 @@ function createModal(results, id) {
     <hr>
     <p class="phone">${results[index].cell.replace(')-', ') ')}</p>
     <p class="address">
-      ${results[index].location.street}, ${abbreviation} ${results[index].location.postcode}</p>
+      ${results[index].location.street.number} ${results[index].location.street.name}, ${abbreviation} ${results[index].location.postcode}</p>
     <p class="birthday">Birthday: ${birthday}</p>
   `;
   employeeDetails.innerHTML = details;
